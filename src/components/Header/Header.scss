@@ -1,0 +1,57 @@
+@import '../../assets/scss/variables';
+
+.myNavBar {
+  border: 1px solid $color-borders;
+  border-radius: 4px;
+  background-color: $color-bg-light;
+
+  &__brand {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 620;
+    color: $color-primary !important;
+
+    &__logo {
+      width: 45px;
+      height: 45px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  /* change hamburger button border color */
+  button.navbar-toggler {
+    border-color: $color-primary;
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  span.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(43, 122, 120)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    color: $color-primary;
+  }
+
+  &__item {
+    height: 52px;
+    font-size: 22px;
+    color: $color-primary !important;
+  }
+
+  @media (min-width: 10px) and (max-width: $breakpoint-nav) {
+    &__brand {
+      font-size: 18px;
+      &__logo {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    button.navbar-toggler {
+      width: 40px;
+      height: 32px;
+      padding: 0;
+    }
+  }
+}

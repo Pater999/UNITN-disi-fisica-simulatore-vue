@@ -1,0 +1,806 @@
+{
+  "theoreticalQuestions": [
+    {
+      "id": 1,
+      "question": "Per camminare lungo una strada orizzontale, l'attrito tra i piedi ed il suolo è:",
+      "A": "essenziale",
+      "B": "inutile nel vuoto",
+      "C": "essenziale in presenza di aria, inessenziale nel vuoto",
+      "D": "inutile",
+      "solution": "A"
+    },
+    {
+      "id": 2,
+      "question": "Il campo elettrico è un campo:",
+      "A": "spaziale, ovvero una funzione che a un vettore associa un punto nello spazio",
+      "B": "vettoriale o scalare, a seconda se sia generato da una o più cariche",
+      "C": "scalare",
+      "D": "vettoriale",
+      "solution": "D"
+    },
+    {
+      "id": 3,
+      "question": "Un condensatore piano di capacità C ha le ar­mature quadrate di lato I poste a distanza d, con d « I. Per dimezzare la capacità del condensatore:",
+      "A": "si raddoppiano k lunghezza dei lati delle armature",
+      "B": "si dimezzano le lunghezze dei lati delle armature",
+      "C": "si allontanano le armature fino a raddoppiare la distanza",
+      "D": "si avvicinano le armature dimezzando la distanza",
+      "solution": "C"
+    },
+    {
+      "id": 4,
+      "question": "Una carica elettrica positiva entra in una re­gione, in cui è presente un campo magnetico uniforme. con velocità perpendicolare al campo magnetico. Affinché la carica non venga deviata è necessario introdurre un campo elettrico E.",
+      "A": "Perpendicolare alla velocità e antiparallelo al campo magnetico",
+      "B": "Perpendicolare alla velocità e al campo magnetico",
+      "C": "Antiparallelo alla velocità e perpendicolare al campo magnetico",
+      "D": "Non è possibile non deviare la carica",
+      "solution": "B"
+    },
+    {
+      "id": 5,
+      "question": "Per quale fenomeno un corpo strofinato acquista carica positiva?",
+      "A": "Il corpo perde cariche positive",
+      "B": "Il corpo acquista cariche positive",
+      "C": "Il corpo perde cariche negative",
+      "D": "ll corpo acquista cariche negative",
+      "solution": "C"
+    },
+    {
+      "id": 6,
+      "question": "Che cosa succede se avviciniamo le armature di un condensatore piano a facce parallele collegato a un generatore?",
+      "A": "diminuisce la capacità",
+      "B": "non succede niente",
+      "C": "diminuisce l'energia elettrica",
+      "D": "aumenta il campo elettrico tra le armature",
+      "solution": "D"
+    },
+    {
+      "id": 7,
+      "question": "Un ciclo di Carnot è composto da:",
+      "A": "due isoterme e due adiabatiche",
+      "B": "due isoterme e due isocore",
+      "C": "due isocore e due adiabatiche",
+      "D": "quattro isoterme",
+      "solution": "A"
+    },
+    {
+      "id": 8,
+      "question": "Il corpo A ha capacità termica maggiore del corpo B, pertanto, a parità di temperatura iniziale",
+      "A": "A si riscalda più lentamente di B e si raffredda più lentamente",
+      "B": "A si riscalda più velocemente di 13 e si raffredda più velocemente",
+      "C": "A si riscalda più velocemente di B, ma si raffredda più lentamente",
+      "D": "A si riscalda più lentamente di B. ma si raffredda più velocemente",
+      "solution": "A"
+    },
+    {
+      "id": 9,
+      "question": "Una macchina termica esegue una trasforma­zione ciclica:",
+      "A": "La macchina converte in lavoro una parte del­l'energia assorbita in quanto la parte residua va ad aumentare l'energia interna del sistema",
+      "B": "La macchina converte integralmente in lavoro l'energia assorbita solo se esegue un ciclo di Carnot",
+      "C": "La macchina converte integralmente in lavoro l'energia assorbita",
+      "D": "La macchina converte in lavoro la quantità di energia pari alla differenza tra il calore assor­bito dalla sorgente calda e il calore ceduto alla sorgente fredda",
+      "solution": "D"
+    },
+    {
+      "id": 10,
+      "question": "Un corpo sta per essere sollevato tramite una fune inestensibile e una carrucola semplice. L'utilizzo della carrucola:",
+      "A": "non influisce sulla forza necessaria a sollevare un corpo",
+      "B": "permette di ridurre la forza necessaria a sollevare un corpo",
+      "C": "serve solo per cambiare il verso di applicazione della forza",
+      "D": "nessuna della altre risposte",
+      "solution": "C"
+    },
+    {
+      "id": 11,
+      "question": "Si consideri un conduttore su cui viene depositata della carica; questa si distribuirà:",
+      "A": "uniformemente sulla superficie con densità variabile",
+      "B": "sulla superficie, con densità variabile a seconda del raggio di curvatura locale della superficie del conduttore",
+      "C": "uniformemente in tutto il volume del conduttore",
+      "D": "in tutto il volume del conduttore, con densità variabile a seconda della forma del conduttore e nelle regioni limitrofe",
+      "solution": "B"
+    },
+    {
+      "id": 12,
+      "question": "Un gas perfetto si espande isotermicamente dallo stato A allo stato B. Quale affermazione è sbagliata?",
+      "A": "La temperatura del gas rimane costante.",
+      "B": "L'energia interna del gas rimane costante.",
+      "C": "Il gas cede calore all'ambiente.",
+      "D": "Il lavoro che il gas compie è positivo.",
+      "solution": "C"
+    },
+    {
+      "id": 13,
+      "question": "Due carica di 1μC, poste alla distanza di 1 m, si attraggono con una forza di 8.988*10<sup>-3</sup>  N. Che cosa si può dedurre da questo fatto?",
+      "A": "le cariche non sono nel vuoto",
+      "B": "non ci sono elementi sufficienti per rispondere",
+      "C": "non è una situazione fisica possibile",
+      "D": "le cariche sono nel vuoto",
+      "solution": "D"
+    },
+    {
+      "id": 14,
+      "question": "Un sistema termodinamico esegue una trasformazione ciclica. La variazione di energia interna è",
+      "A": "nulla solo se si tratta di una trasformazione reversibile",
+      "B": "nulla se si tratta di una trasformazione adiabatica",
+      "C": "nulla qualunque sia la natura del sistema e della trasformazione",
+      "D": "nulla solo se il sistema è un gas perfetto",
+      "solution": "C"
+    },
+    {
+      "id": 15,
+      "question": "Se rappresentiamo graficamente il volume di un gas perfetto in funzione della temperatura centigrada (a pressione costante), otteniamo:",
+      "A": "una retta non passante per l’origine",
+      "B": "una parabola",
+      "C": "una iperbole",
+      "D": "nessuna curva, la temperatura deve essere espressa in gradi Kelvin",
+      "solution": "A"
+    },
+    {
+      "id": 16,
+      "question": "Due corpi di massa 1 kg e 2 kg sono appesi agli estremi di un filo inestensibile ad una carrucola. Con che accelerazione si muovono i 2 corpi?",
+      "A": "g",
+      "B": "g/3",
+      "C": "2g",
+      "D": "4g",
+      "solution": "B"
+    },
+    {
+      "id": 17,
+      "question": "Quando possiamo affermare che la quantità di moto si conserva?",
+      "A": "solo negli urti elastici",
+      "B": "solo negli urti anelastici",
+      "C": "nei sistemi isolati",
+      "D": "solo se riferita a un sistema in moto accelerato",
+      "solution": "C"
+    },
+    {
+      "id": 18,
+      "question": "è possibile ottenere un polo magnetico isolato?",
+      "A": "no, mai",
+      "B": "sì, in qualunque magnete",
+      "C": "sì, in un magnete corto e spezzato a metà",
+      "D": "sì, in un magnete molto sottile diviso molte volte",
+      "solution": "A"
+    },
+    {
+      "id": 19,
+      "question": "Il rendimento di un qualunque ciclo termodinamico è dato dal:",
+      "A": "lavoro compiuto diviso calore assorbito",
+      "B": "lavoro compiuto più calore assorbito",
+      "C": "lavoro compiuto meno calore assorbito",
+      "D": "solo lavoro compiuto",
+      "solution": "A"
+    },
+    {
+      "id": 20,
+      "question": "Una carica puntiforme ferma nello spazio genera:",
+      "A": "Un campo elettrico dipolare",
+      "B": "Un campo magnetico",
+      "C": "Nessuna delle altre risposte",
+      "D": "Una corrente elettrica",
+      "solution": "C"
+    },
+    {
+      "id": 21,
+      "question": "Qual è il miglior modo di collegare le lampadine per un ornamento natalizio affinché la rottura di una lampadina non faccia smettere di funzionare l'intero sistema?",
+      "A": "In serie",
+      "B": "In parallelo",
+      "C": "Alternare lampadine e condensatori",
+      "D": "Nessuna delle altre risposte",
+      "solution": "B"
+    },
+    {
+      "id": 22,
+      "question": "Un circuito alimentato da una batteria che eroga un certo ΔV è composto da tre lampadine disposte in parallelo. Dopo un pò di tempo la lampadina centrale si brucia. La corrente nelle altre due lampadine:",
+      "A": "si annulla",
+      "B": "diminuisce",
+      "C": "aumenta",
+      "D": "resta la stessa",
+      "solution": "D"
+    },
+    {
+      "id": 23,
+      "question": "La forza elettrica è una forza conservativa. Questo significa che:",
+      "A": "l'energia cinetica di una particella carica si mantiene costante",
+      "B": "se l'energia cinetica di una particella carica aumenta, la sua energia potenziale elettrica diminuisce",
+      "C": "l'energia potenziale elettrica di una particella carica si mantiene costante",
+      "D": "il campo fa diminuire l'energia potenziale",
+      "solution": "B"
+    },
+    {
+      "id": 24,
+      "question": "II secondo principio della termodinamica",
+      "A": "stabilisce le condizioni per la realizzazione del moto perpetuo",
+      "B": "assegna la probabilità di ogni trasformazione termodinamica",
+      "C": "stabilisce l'impossibilità di talune trasformazioni termodinamiche",
+      "D": "definisce il rendimento delle macchine termiche",
+      "solution": "C"
+    },
+    {
+      "id": 25,
+      "question": "Il rendimento di un ciclo di Carnot:",
+      "A": "dipende dalle temperature a cui viene scambiato il calore",
+      "B": "è sempre maggiore di I",
+      "C": "dipende solo dalla temperatura iniziale del gas",
+      "D": "dipende solo dalla temperatura finale del gas",
+      "solution": "A"
+    },
+    {
+      "id": 26,
+      "question": "In quale caso le componenti di una forza F sono uguali sul piano x — y?",
+      "A": "Quando F è parallela all'asse x.",
+      "B": "Quando F forma un angolo di 45° con l'asse x.",
+      "C": "Quando F è perpendicolare all'asse x. ",
+      "D": "Non possono mai essere uguali.",
+      "solution": "B"
+    },
+    {
+      "id": 27,
+      "question": "Date le seguenti grandezze fisiche (Tempo, Temperatura, Spostamento. Massa), quale frase è corretta?",
+      "A": "Solo la massa è uno scalare",
+      "B": "Sono tutti moduli di vettori",
+      "C": "Sono tutte grandezze scalari",
+      "D": "Solo lo spostamento è un vettore",
+      "solution": "D"
+    },
+    {
+      "id": 28,
+      "question": "L'unità di misura della resistività è:",
+      "A": "Ω/m",
+      "B": "Ω*m",
+      "C": "Ω/m<sup>2</sup>",
+      "D": "Ω*m<sup>3</sup>",
+      "solution": "B"
+    },
+    {
+      "id": 29,
+      "question": "Una quantità di carica Q viene depositata su di un conduttore isolato costituito da una sfera piena dotata di una cavità sferica al suo interno. In condizioni statiche la carica si distribuirà:",
+      "A": "Uniformemente nel volume del metallo",
+      "B": "Sulle superfici interna ed esterna. proporzionalmente alla loro superficie",
+      "C": "La carica non rimane sul conduttore ma viene immediatamente dispersa",
+      "D": "Uniformemente sulla superficie esterna della sfera",
+      "solution": "D"
+    },
+    {
+      "id": 30,
+      "question": "Due quantità di gas perfetti uguali si trovano nello stesso stato. Uno si espande a pressione costante, l'altro si espande a temperatura costante. Alla fine, quale dei due ha l'energia interna maggiore?",
+      "A": "Il primo",
+      "B": "Il secondo",
+      "C": "Hanno la stessa energia cinetica",
+      "D": "Non ci sono elementi sufficienti per rispondere",
+      "solution": "A"
+    },
+    {
+      "id": 31,
+      "question": "Su che principio fisico è principalmente basato il funzionamento del motore di un razzo?",
+      "A": "conservazione della energia elettrica",
+      "B": "conservazione del momento angolare",
+      "C": "nessuna delle altre risposte",
+      "D": "Conservazione dell'impulso",
+      "solution": "D"
+    },
+    {
+      "id": 32,
+      "question": "Due fili conduttori paralleli percorsi da corrente elettrica di verso opposto:",
+      "A": "si attraggono",
+      "B": "non sono sottoposti ad alcun tipo di forza",
+      "C": "oscillano con una frequenza proporzionale alla differenza delle correnti",
+      "D": "si respingono",
+      "solution": "D"
+    },
+    {
+      "id": 33,
+      "question": "Un motore ideale assorbe calore da una sorgente termica a temperatura maggiore e cede calore ad una sorgente a temperatura minore. Se il calore ceduto alla sorgente a bassa temperatura è 3 volte più grande del lavoro fatto dal motore, il suo rendimento è",
+      "A": "0.75",
+      "B": "0.67",
+      "C": "0.33",
+      "D": "0.25",
+      "solution": "D"
+    },
+    {
+      "id": 34,
+      "question": "Un corpo passa dallo stato solido allo stato liquido. Durante il processo di fusione , la temperatura del corpo",
+      "A": "Rimane invariata perché il corpo è in equilibrio termico con l'ambiente esterno",
+      "B": "Diminuisce perché diminuisce la sua energia interna",
+      "C": "Aumenta perché il corpo riceve calore dall' esterno",
+      "D": "Rimane invariata perché l'energia ricevuta viene spesa per spezzare i legami tra le molecole",
+      "solution": "D"
+    },
+    {
+      "id": 35,
+      "question": "Secondo la teoria cinetica classica dei gas, la temperatura di zero assoluto corrisponde alla situazione fisica in cui:",
+      "A": "la pressione del gas è zero",
+      "B": "il volume del gas è zero",
+      "C": "il calore specifico del gas è zero",
+      "D": "l'energia cinetica media del gas è zero",
+      "solution": "D"
+    },
+    {
+      "id": 36,
+      "question": "Un carrello di massa m urta centralmente al­la velocità v un secondo carrello fermo, proseguendo do­po l'urto a velocità V. Se l'urto è totalmente anelastico, quanto vale la massa del secondo carrello?",
+      "A": "m(V-v)/v",
+      "B": "mv/V",
+      "C": "m(v-V)/V",
+      "D": "mV/v",
+      "solution": "C"
+    },
+    {
+      "id": 37,
+      "question": "Due lampadine di resistenza elettrica R<sub>1</sub> < R<sub>2</sub> vengono alimentate in parallelo dalla stessa linea elettrica. Qual è la relazione tra le potenze dissipate dalle due lampadine?",
+      "A": "P<sub>1</sub> = P<sub>2</sub>",
+      "B": "P<sub>1</sub> < P<sub>2</sub>",
+      "C": "P<sub>1</sub> > P<sub>2</sub>",
+      "D": "Non è possibile saperlo senza sapere la differenza di potenziale della linea elettrica",
+      "solution": "C"
+    },
+    {
+      "id": 38,
+      "question": "Si consideri un condensatore a facce piane pa­rallele collegato ad un generatore di forza elettromotrice costante. Avvicinando le armature:",
+      "A": "il campo elettrico nel condensatore non varia",
+      "B": "la capacità del condensatore non varia",
+      "C": "la carica delle armature del condensatore diminuisce",
+      "D": "la carica delle armature del condensatore aumenta",
+      "solution": "D"
+    },
+    {
+      "id": 39,
+      "question": "Se un gas monoatomico subisce un'espansione isoterma reversibile raddoppiando il suo volume, compie un lavoro. Se invece subisce un'espansione adiabatica reversibile, raddoppiando il suo volume a partire dalle stesse condizioni iniziali, il gas compie un lavoro W<sub>α</sub>. Quale affermazione è corretta?",
+      "A": "W<sub>i</sub> = W<sub>α</sub>",
+      "B": "0 < W<sub>α</sub> < W<sub>i</sub>",
+      "C": "0 < W<sub>i</sub> < W<sub>α</sub>",
+      "D": "0 = W<sub>α</sub> < W<sub>i</sub>",
+      "solution": "B"
+    },
+    {
+      "id": 40,
+      "question": "Le energie cinetiche di due corpi A e B sono uguali. Se la massa di A e il triplo della massa di B, detta Q la quantità di moto di B, quanto vale la quantita di moto di A?",
+      "A": "√(3Q)",
+      "B": "Q",
+      "C": "Q/2",
+      "D": "3Q",
+      "solution": "A"
+    },
+    {
+      "id": 41,
+      "question": "Di due oggetti si conoscono solo le rispettive temperature, che sono diverse. Con queste sole informazioni si può dedurre:",
+      "A": "l’energia interna di ciascun oggetto",
+      "B": "nessuna delle risposte",
+      "C": "quanto calore può essere trasmesso da un oggetto all’altro",
+      "D": "la temperatura di equilibrio a cui pervengono i due oggetti messi in contatto termico",
+      "solution": "B"
+    },
+    {
+      "id": 42,
+      "question": "L'energia cinetica di un corpo di massa m in movimento con velocità v è E<sub>c</sub>. Se la velocità diventa 2v, qual è il valore dell'energia cinetica?",
+      "A": "4E<sub>c</sub>",
+      "B": "2E<sub>c</sub>",
+      "C": "√(E<sub>c</sub>)",
+      "D": "1/2E<sub>c</sub>",
+      "solution": "A"
+    },
+    {
+      "id": 43,
+      "question": "La curva caratteristica di un conduttore ohmico, in funzione della corrente e della tensione, è:",
+      "A": "Una retta che passa per l'origine",
+      "B": "Una retta parallela all'asse delle ascisse",
+      "C": "Una retta che non passa per l'origine",
+      "D": "Nessuna delle altre risposte",
+      "solution": "A"
+    },
+    {
+      "id": 44,
+      "question": "In un gas, durante una trasformazione isoterma. al diminuire della pressione:",
+      "A": "il volume diminuisce",
+      "B": "il volume aumenta",
+      "C": "il volume rimane invariato",
+      "D": "il volume può aumentare come diminuire",
+      "solution": "B"
+    },
+    {
+      "id": 45,
+      "question": "Nota la massa di una mole di gas, come si può determinare la massa di una molecola?",
+      "A": "Numero di Avogadro per la massa della mole",
+      "B": "Numero di Avogadro per massa della mole, diviso numero di Avogadro",
+      "C": "Massa della mole diviso numero di Avogadro",
+      "D": "Massa della mole per accelerazione di gravità",
+      "solution": "C"
+    },
+    {
+      "id": 46,
+      "question": "Il verso convenzionale della corrente elettrica è:",
+      "A": "Quello in cui si muoverebbero spontaneamente i portatori di carica negativi",
+      "B": "Quello in cui si trovano in maggioranza i portatori di carica positivi",
+      "C": "Quello in cui si muoverebbero spontaneamente i portatori di carica positivi",
+      "D": "Quello in cui si trovano in maggioranza i portatori di carica negativi",
+      "solution": "C"
+    },
+    {
+      "id": 47,
+      "question": "Una particella carica penetra con una velocità diversa da zero in un campo magnetico uniforme. La traiettoria che descrive non può essere:",
+      "A": "un’elica",
+      "B": "una retta",
+      "C": "una parabola",
+      "D": "una circonferenza",
+      "solution": "C"
+    },
+    {
+      "id": 48,
+      "question": "Quando l'acqua bolle a pressione costante con il passare del tempo la sua temperatura:",
+      "A": "è uguale a quella dell'ambiente esterno",
+      "B": "va aumentando",
+      "C": "si mantiene costante",
+      "D": "va diminuendo",
+      "solution": "C"
+    },
+    {
+      "id": 49,
+      "question": "La forza di 1N espressa in funzione di unità fondamentali del sistema SI è:",
+      "A": "1g * m/s<sup>2</sup>",
+      "B": "1kg * m/s<sup>2</sup>",
+      "C": "1s<sup>2</sup> * m/kg",
+      "D": "1s * m/kg",
+      "solution": "B"
+    },
+    {
+      "id": 50,
+      "question": "La resistenza elettrica di un filo metallico è in proporzione: ",
+      "A": "diretta della resistività e della lunghezza del filo",
+      "B": "diretta della sezione e della lunghezza del filo",
+      "C": "diretta della resistività e della sezione del filo",
+      "D": "inversa della resistività e della lunghezza del filo",
+      "solution": "A"
+    },
+    {
+      "id": 51,
+      "question": "Due recipienti identici sono pieni d’aria a temperatura ambiente e a pressione atmosferica; uno dei due viene messo in frigorifero, l’altro in acqua a 90°C. Che cosa si può dire sulle velocità delle molecole nei due recipienti?",
+      "A": "sono in media uguali",
+      "B": "non si può dire nulla perché l’aria è un miscuglio di gas",
+      "C": "le molecole del gas nel recipiente in acqua hanno velocità mediamente minore",
+      "D": "le molecole del gas nel recipiente in frigorifero si muovono mediamente con velocità minore",
+      "solution": "D"
+    },
+    {
+      "id": 52,
+      "question": "Un’azienda diffonde la notizia di avere costruito un motore termico che funziona fra le temperature di 200°C e 50°C con un rendimento di 0.7. Si può dire che:",
+      "A": "il rendimento ottenuto è eccellente",
+      "B": "il rendimento ottenuto è scarso",
+      "C": "un tale motore non può esistere perché il rendimento dichiarato è al di sopra del massimo possibile per il II principio della termodinamica",
+      "D": "tale motore non può esistere perché il rendimento dichiarato è al di sotto del minimo possibile per il II principio della termodinamica",
+      "solution": "C"
+    },
+    {
+      "id": 53,
+      "question": "Moltiplicare o dividere un vettore per uno scalare produce:",
+      "A": "un vettore",
+      "B": "uno scalare",
+      "C": "un vettore se moltiplicato o uno scalare se diviso",
+      "D": "un campo scalare",
+      "solution": "A"
+    },
+    {
+      "id": 54,
+      "question": "Due cariche elettriche inizialmente a distanza 1 m, vengono portate a distanza 10 cm. La forza è:",
+      "A": "diminuita di 100 volte",
+      "B": "aumentata di 100 volte",
+      "C": "aumentata di 10 volte",
+      "D": "diminuita di 10 volte",
+      "solution": "B"
+    },
+    {
+      "id": 55,
+      "question": "Due lampadine identiche R sono alimentate da un generatore di tensione V. È vero che:",
+      "A": "Montando le due lampadine in parallelo esse sono attraversate da una maggiore corrente e quindi si illuminano di più",
+      "B": "Montando le due lampadine in parallelo esse sono attraversate da una minore corrente e quindi si illuminano di più",
+      "C": "Montando le due lampadine in serie esse sono attraversate da una maggiore corrente e quindi si illuminano di più.",
+      "D": "Montando le due lampadine in parallelo esse sono attraversate da una minore corrente, quindi si illuminano di meno",
+      "solution": "A"
+    },
+    {
+      "id": 56,
+      "question": "In un sistema di riferimento inerziale, la risultante di tutte le forze agenti su un corpo e nulla. Quindi:",
+      "A": "il corpo si muove di moto uniformemente accelerato rispetto a qualsiasi sistema di riferimento",
+      "B": "il corpo è in quiete o si muove di moto rettilineo uniforme",
+      "C": "per descrivere il comportamento del corpo bisogna conoscere la sua massa",
+      "D": "nessuna delle precedenti",
+      "solution": "B"
+    },
+    {
+      "id": 57,
+      "question": "Per aumentare il rendimento di una macchina reversibile si può",
+      "A": "aumentare la temperatura della sorgente fredda lasciando inalterata quella della sorgente calda",
+      "B": "aumentare il calore ceduto dalla macchina lasciando costante il rapporto tra il calore scambiato con la sorgente fredda e calda.",
+      "C": "aumentare il calore assorbito dalla macchina lasciando costante il rapporto tra il calore scambiato con la sorgente fredda e calda",
+      "D": "diminuire la temperatura della sorgente fredda lasciando inalterata quella della sorgente calda",
+      "solution": "D"
+    },
+    {
+      "id": 58,
+      "question": "La stessa quantità di calore viene fornita a due corpi di uguale massa, inizialmente alla stessa temperatura, costituiti rispettivamente di vetro e di rame. Il calore specifico del vetro e maggiore di quello del rame. Da queste premesse si puo dedurre che:",
+      "A": "Le temperature nali dei due corpi saranno in ogni caso uguali",
+      "B": "Il corpo di vetro avrà una temperatura finale maggiore",
+      "C": "il corpo di rame si scalderà prima del corpo di vetro, ma raggiungerà una temperatura finale minore.",
+      "D": "Il corpo di rame avrà una temperatura finale maggiore",
+      "solution": "D"
+    },
+    {
+      "id": 59,
+      "question": "Un'automobile deve compiere un giro della morte; indicare l'affermazione corretta:",
+      "A": "nel punto più alto la forza centripeta deve almeno compensare la forza peso",
+      "B": "l'energia cinetica alla base della pista deve essere uguale all'energia potenziale in cima (Eik=Uf)",
+      "C": "la normale alla superficie e costante lungo tutto il profilo della pista",
+      "D": "l'auto non può arrivare ferma in cima",
+      "solution": "D"
+    },
+    {
+      "id": 60,
+      "question": "Prendete due retine da 5 arance di massa uguale poste a distanza r. Avvicinando le retine ad una distanza r’ = 3/5r, come devo ridisporre le arance nelle retine anche la forza gravitazionale sia la stessa del caso originale?",
+      "A": "devo spostare 3 arance",
+      "B": "non esiste una soluzione con un numero intero",
+      "C": "devo spostare due arance",
+      "D": "devo spostare 4 arance",
+      "solution": "D"
+    },
+    {
+      "id": 61,
+      "question": "In presenza di un campo magnetico uniforme,  una  particella  seguirà  una  traiettoria  circolare  se  la particella si muove:",
+      "A": "parallelamente alla linee del campo.",
+      "B": "con un angolo di 45° rispetto le linee di campo",
+      "C": "perpendicolarmente alla linee del campo.",
+      "D": "Senza un campo elettrico la particella non può muoversi su una traiettoria circolare",
+      "solution": "C"
+    },
+    {
+      "id": 62,
+      "question": "Un giovane ingegnere, inconsapevole delle conseguenze del terzo principio della termodinamica, vuole costruire una macchina termica che opera tra due sorgenti T<sub>1</sub> e T<sub>2</sub> con rendimento ideale 1. Cosa dovrebbe poter fare per ottenere il risultato preciso?",
+      "A": "rendere T<sub>1</sub> >> T<sub>2</sub>",
+      "B": "Portare la sorgente T<sub>1</sub> a 0 Kelvin",
+      "C": "Portare la sorgente T<sub>2</sub> a 0 Celsius",
+      "D": "Porre le sorgenti a T<sub>1</sub> c T<sub>2</sub>",
+      "solution": "B"
+    },
+    {
+      "id": 63,
+      "question": "In termodinamica lo stato di un sistema costituito da un gas perfetto è definito da:",
+      "A": "pressione, volume e temperatura",
+      "B": "pressione e volume",
+      "C": "volume e temperatura",
+      "D": "nessuna delle altre risposte",
+      "solution": "A"
+    },
+    {
+      "id": 64,
+      "question": "Un volume contiene due gas separati da una barriera adiabatica.  L’energia interna del primo gas è E<sub>1</sub> e quella del secondo E<sub>2</sub>. L’energia totale E<sub>t</sub> = E<sub>1</sub> + E<sub>2</sub>. Se la barriera viene rimossa permettendo il mescolamento dei due gas:",
+      "A": "L’energia E<sub>t</sub> si abbassa mentre l’entropia del sistema dei due gas aumenta",
+      "B": "L’energia E<sub>t</sub> si abbassa mentre l’entropia del sistema dei due gas diminuisce",
+      "C": "L’energia E<sub>t</sub> resta costante e l’entropia del sistema dei due gas aumenta",
+      "D": "L’energia E<sub>t</sub> aumenta e l’entropia del sistema dei due gas aumenta",
+      "solution": "C"
+    },
+    {
+      "id": 65,
+      "question": "I metalli sono buoni conduttori di corrente elettrica:",
+      "A": "perché hanno un alto punto di fusione",
+      "B": "per tutte le altre risposte",
+      "C": "perché contengono elettroni liberi",
+      "D": "perché sono densi",
+      "solution": "C"
+    },
+    {
+      "id": 66,
+      "question": "Quando una particella carica q è lanciata a velocità v in direzione opposta al campo magnetico B, la forza da essa subita sarà:",
+      "A": "nulla",
+      "B": "infinita",
+      "C": "qv*B",
+      "D": "q|v||B|cosΘ",
+      "solution": "A"
+    },
+    {
+      "id": 67,
+      "question": "Un ragazzo si lascia cadere in piscina lungo uno scivolo partendo da un’altezza h. Qual è il rapporto tra le energie cinetiche nel punto ad h/2 e nel punto finale?",
+      "A": "1/4",
+      "B": "1",
+      "C": "non è possibile stabilirlo senza conoscere la massa del ragazzo",
+      "D": "1/2",
+      "solution": "D"
+    },
+    {
+      "id": 68,
+      "question": "Due corpi di masse diverse, inizialmente fermi, dopo esser stati sottoposti alla stessa forza per lo stesso tempo, avranno:",
+      "A": "la stessa quantità di moto",
+      "B": "la stessa energia",
+      "C": "la stessa accelerazione",
+      "D": "la stessa velocità",
+      "solution": "A"
+    },
+    {
+      "id": 69,
+      "question": "Una data massa di gas contenuta in un recipiente ermetico dalle pareti rigide subisce una trasformazione termodinamica. Quale tra le seguenti grandezze non varia qualunque sia il tipo di trasformazione?",
+      "A": "la pressione",
+      "B": "la temperatura",
+      "C": "l’energia cinetica media",
+      "D": "la densità del gas",
+      "solution": "D"
+    },
+    {
+      "id": 70,
+      "question": "Un gas perfetto subisce una trasformazione isoterma. Quale delle seguenti affermazioni è corretta?",
+      "A": "la variazione di energia interna è positiva",
+      "B": "la variazione di energia interna è negativa",
+      "C": "la variazione di temperatura è minore di zero",
+      "D": "l’energia interna del gas rimane costante",
+      "solution": "D"
+    },
+    {
+      "id": 71,
+      "question": "La temperatura di un gas è tenuta costante, mentre il suo volume diminuisce. La pressione esercitata sulle pareti del contenitore aumenta poiché le molecole:",
+      "A": "urtano le pareti a velocità maggiore",
+      "B": "sono in contatto con le pareti in meno tempo",
+      "C": "urtano le pareti frequentemente",
+      "D": "diventano più pesanti",
+      "solution": "C"
+    },
+    {
+      "id": 72,
+      "question": "L’angolo tra la velocità e l’accelerazione per un moto 1-D sara:",
+      "A": "compreso tra 0° e 180°",
+      "B": "uguale a 90°",
+      "C": "uguale a 0°",
+      "D": "uguale a 0° o 180°",
+      "solution": "D"
+    },
+    {
+      "id": 73,
+      "question": "Un conduttore filiforme di resistenza R è alimentato con un generatore di tensione. Il filo è attraversato da una corrente di intensità I. Volendo raddoppiare l’intensità di corrente dobbiamo: ",
+      "A": "Raddoppiare la lunghezza del conduttore",
+      "B": "Dimezzare la lunghezza e la sezione del conduttore",
+      "C": "Dimezzare la sezione del conduttore",
+      "D": "Raddoppiare la sezione del conduttore",
+      "solution": "D"
+    },
+    {
+      "id": 74,
+      "question": "La massa di Giove è circa un millesimo di quella del Sole. Giove e il Sole si attraggono reciprocamente. In quale rapporto stanno la forza che il Sole esercita su Giove e quella che Giove esercita sul Sole?",
+      "A": "1:1000",
+      "B": "1000:1",
+      "C": "1:1",
+      "D": "Dipende da dove si trova l’origine sistema di riferimento.",
+      "solution": "C"
+    }
+  ],
+  "simpleExercises": [
+    {
+      "id": 1,
+      "question": "Due scatole di plastica di massa trascurabile contengono ciascuna 15 arance uguali e sono poste su di un tavolo ad una certa distanza. Se 10 arance vengono trasferite da una scatola all'altra, la forza di attrazione gravitazionale tra le due scatole:",
+      "A": "aumenta, diventando 5/3 di quella prima del trasferimento",
+      "B": "rimane invariata",
+      "C": "si riduce diventando 5/9 di quella prima del trasferimento",
+      "D": "aumenta, diventando i 3/2 di quella prima del trasferimento",
+      "solution": "C",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 2,
+      "question": "Un oggetto inizialmente in moto con la velo­cità 10 m/s accelera uniformemente per 10 s fino a rag­giungere la velocità di 30 m/s. Qual è l'accelerazione dell'oggetto?",
+      "A": "10m/s<sup>2</sup>",
+      "B": "20m/s<sup>2</sup>",
+      "C": "2m/s<sup>2</sup>",
+      "D": "30m/s<sup>2</sup>",
+      "solution": "C",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 3,
+      "question": "È noto che sulla Luna l'accelerazione di gran vità è circa 1/6 di quella sulla Terra. Se un corpo raggiun­ge il suolo con velocità v cadendo da fermo da un'altezza h sulla Terra, da quale altezza dovrebbe cadere sulla Luna per giungere al suolo con la stessa velocità?",
+      "A": "h/6",
+      "B": "36h",
+      "C": "6h",
+      "D": "h/36",
+      "solution": "C",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 4,
+      "question": "Un ragazzo getta in aria una palla, verticalmente verso l'alto. Sia T il tempo totale in cui la palla resta in aria (salita e discesa), e H la massima altezza raggiunta, rispetto al punto di lancio. Qual è la sua altezza dopo un tempo T/4 dall'istante del lancio se la resistenza dell'aria è trascurabile?",
+      "A": "1/4 H",
+      "B": "3/4 H",
+      "C": "1/3 H",
+      "D": "non è possibile rispondere senza sapere la velocità iniziale della palla",
+      "solution": "B",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 5,
+      "question": "ΔU<sub>1</sub> è l'aumento di energia interna di una mole di gas, che inizialmente si trova alla temperatura assoluta T, pressione P, volume V, quando la sua temperatura subisce un incremento di 1 K a pressione costante. Se la stessa variazione di temperatura avvenisse a volume costante, l'energia interna aumenterebbe del valore ΔU<sub>2</sub> pari a:",
+      "A": "ΔU<sub>1</sub> + pT",
+      "B": "ΔU<sub>1</sub> - pVT",
+      "C": "ΔU<sub>1</sub>",
+      "D": "ΔU<sub>1</sub> - pV/T",
+      "solution": "C",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 6,
+      "question": "Un ascensore si muove verso l'alto con accele­razione a (m/s<sup>2</sup>) . Una persona di massa m (kg) si trova al suo interno in piedi sopra una bilancia. Il peso segnato dalla bilancia è P (N). Dati: a = 2.5, P = 800.0. trovare m.",
+      "A": "141.0",
+      "B": "92.4",
+      "C": "114.0",
+      "D": "65.0",
+      "solution": "D",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 7,
+      "question": "TODO",
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "solution": "",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    }
+  ],
+  "difficultExercises": [
+    {
+      "id": 1,
+      "question": "Un'automobile parte da ferma con moto uni­formemente accelerato, e accelerazione α (m/s<sup>2</sup>). Dopo un tempo Δt (s) si spara un proiettile che si può supporre in moto con velocità costante v<sub>0</sub> (m/s), che è la minima velocità necessaria a colpire l'automobile. Dati: α = 5.5. v<sub>0</sub> = 110.0, trovare Δt.",
+      "A": "7.29",
+      "B": "14.8",
+      "C": "16.8",
+      "D": "10.0",
+      "solution": "D",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 2,
+      "question": "Un’automobile parte da ferma con un moto uniformemente accelerato, e accelerazione α (m/s<sup>2</sup>). Dopo un tempo Δt (s) si spara un proiettile che si può supporre in moto con velocità costante v<sub>0</sub> (m/s), che è la minima velocità necessaria a colpire l’automobile. Dati: α=4.9, Δt =9.8, trovare v<sub>0</sub> .",
+      "A": "194.0",
+      "B": "96.0",
+      "C": "226.0",
+      "D": "65.5",
+      "solution": "B",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 3,
+      "question": "Su un piano inclinato di angolo Θ (deg) si tro­va un corpo di massa m<sub>2</sub> (kg). Tramite una fune inestensibile e una carrucola perfetta il precedente corpo è collegato a un corpo di massa m<sub>1</sub> (kg) che si trova in caduta verso il suolo ad altezza h<sub>1</sub> (m) e toccherà terra dopo un tempo t (s). Dati: m<sub>1</sub> = 67.0, m<sub>2</sub> = 53.0. h<sub>1</sub> = 37.0,  Θ = 28.0, trovare t.",
+      "A": "11.1",
+      "B": "4.64",
+      "C": "2.44",
+      "D": "3.49",
+      "solution": "B",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    },
+    {
+      "id": 4,
+      "question": "TODO",
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "solution": "",
+      "formula": "",
+      "function": "",
+      "imageLink": ""
+    }
+  ]
+}
