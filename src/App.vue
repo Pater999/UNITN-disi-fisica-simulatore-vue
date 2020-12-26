@@ -6,10 +6,4 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import Header from './components/Header/Header.vue';
-export default Vue.extend({
-  components: { Header },
-});
-</script>
+<script lang="ts" src="./App.ts"></script>
