@@ -11,6 +11,8 @@ const QuestionsPage = () =>
   );
 const TestPage = () =>
   import(/* webpackChunkName: "test-page" */ '../views/Test/Test.vue');
+const ErrorPage = () =>
+  import(/* webpackChunkName: "404-page" */ '../views/404/404.vue');
 
 const appTitle = 'Pater999 - Simulatore fisica UNITN';
 
@@ -21,6 +23,7 @@ const routes: Array<RouteConfig> = [
     component: HomePage,
     meta: {
       title: `${appTitle}`,
+      showHeader: true,
     },
   },
   {
@@ -29,6 +32,7 @@ const routes: Array<RouteConfig> = [
     component: TestPage,
     meta: {
       title: `${appTitle} - Test`,
+      showHeader: true,
     },
   },
   {
@@ -37,14 +41,16 @@ const routes: Array<RouteConfig> = [
     component: QuestionsPage,
     meta: {
       title: `${appTitle} - Lista domande`,
+      showHeader: true,
     },
   },
   {
     path: '/404',
     name: '404-page',
-    component: HomePage,
+    component: ErrorPage,
     meta: {
-      title: `${appTitle} - 404`,
+      title: `${appTitle} - Page 404`,
+      showHeader: false,
     },
   },
   {
