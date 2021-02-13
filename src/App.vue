@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <Header />
+    <Header v-if="$route.meta.showHeader" />
 
     <router-view />
   </div>
