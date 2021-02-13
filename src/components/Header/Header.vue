@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable="md" class="mt-2 myNavBar mb-3">
     <b-navbar-brand>
-      <router-link to="/" class="myNavBar__brand d-flex align-items-center">
+      <div class="myNavBar__brand d-flex align-items-center">
         <span>
           <img
             alt="logo"
@@ -10,12 +10,12 @@
           />
         </span>
         <span>Simulatore fisica</span>
-      </router-link>
+      </div>
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-    <b-collapse id="nav-collapse" is-nav>
+    <b-collapse id="nav-collapse" is-nav v-if="!isExamStarted">
       <b-navbar-nav class="ml-auto mr-2">
         <b-nav-item>
           <router-link
@@ -47,6 +47,14 @@
           >
             Statistiche
           </router-link>
+        </b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+
+    <b-collapse id="nav-collapse" is-nav v-else>
+      <b-navbar-nav class="ml-auto mr-2">
+        <b-nav-item>
+          <el-button type="info" @click="endExam">CONSEGNA</el-button>
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>

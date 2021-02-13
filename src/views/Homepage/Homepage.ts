@@ -1,6 +1,7 @@
 import axiosInstance from '@/axios-instance';
 import { QuestionsDTO } from '@/models/questionDTO';
 import { TestSettings, examConst } from '@/models/TestSettings';
+import { START_EXAM } from '@/store/types/actions-types';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
@@ -39,7 +40,7 @@ export default class Homepage extends Vue {
     }
   }
 
-  startTest() {
+  async startTest() {
     if (
       this.form.difficultExercisesCount +
         this.form.simpleExercisesCount +
@@ -51,7 +52,11 @@ export default class Homepage extends Vue {
       );
       return;
     }
-    console.log(this.form);
+    await this.$store.dispatch(START_EXAM, {
+      questions: this.questions,
+      settings: this.form,
+    });
+    this.$router.replace('/test');
   }
 
   examTypeChanged(value: number) {

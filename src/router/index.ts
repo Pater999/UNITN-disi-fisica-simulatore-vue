@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
+import store from '@/store/index';
 
 Vue.use(VueRouter);
 
@@ -11,6 +12,10 @@ const QuestionsPage = () =>
   );
 const TestPage = () =>
   import(/* webpackChunkName: "test-page" */ '../views/Test/Test.vue');
+const ResultsPage = () =>
+  import(
+    /* webpackChunkName: "results-page" */ '../views/Test/Results/Results.vue'
+  );
 const ErrorPage = () =>
   import(/* webpackChunkName: "404-page" */ '../views/404/404.vue');
 
@@ -30,6 +35,16 @@ const routes: Array<RouteConfig> = [
     path: '/test',
     name: 'test-page',
     component: TestPage,
+    meta: {
+      title: `${appTitle} - Test`,
+      showHeader: true,
+      examStarted: true,
+    },
+  },
+  {
+    path: '/test-results',
+    name: 'test-result-page',
+    component: ResultsPage,
     meta: {
       title: `${appTitle} - Test`,
       showHeader: true,
@@ -68,6 +83,17 @@ const router = new VueRouter({
 // CAMBIO TITOLO
 router.afterEach(async to => {
   document.title = to.meta.title;
+});
+
+router.beforeEach(async (to, from, next) => {
+  const requiresExam = to.matched.some(record => record.meta.examStarted);
+  const { isExamStarted } = store.getters;
+
+  if (requiresExam && !isExamStarted) {
+    next('/');
+  } else {
+    next();
+  }
 });
 
 export default router;

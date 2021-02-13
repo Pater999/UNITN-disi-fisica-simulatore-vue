@@ -1,36 +1,28 @@
-export interface DifficultExercises {
+export interface Question {
   A: string;
   B: string;
   C: string;
   D: string;
-  formula: string;
-  function: string;
   id: number;
   imageLink: string;
   question: string;
-  solution: string;
 }
 
-export interface SimpleExercises {
-  A: string;
-  B: string;
-  C: string;
-  D: string;
+export interface DifficultExercises extends Question {
   formula: string;
   function: string;
   id: number;
-  imageLink: string;
-  question: string;
   solution: string;
 }
 
-export interface TheoreticalQuestion {
-  A: string;
-  B: string;
-  C: string;
-  D: string;
+export interface SimpleExercises extends Question {
+  formula: string;
+  function: string;
   id: number;
-  question: string;
+  solution: string;
+}
+
+export interface TheoreticalQuestion extends Question {
   solution: string;
 }
 

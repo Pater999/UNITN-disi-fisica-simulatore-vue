@@ -13,6 +13,7 @@ import router from './router';
 import store from './store';
 
 import { NavPlugin } from 'bootstrap-vue';
+import { READ_EXAM } from './store/types/actions-types';
 
 Vue.use(
   VueGtag,
@@ -29,6 +30,8 @@ Vue.use(NavPlugin);
 Vue.use(ElementUI, { locale });
 
 Vue.config.productionTip = false;
+
+store.dispatch(READ_EXAM);
 
 new Vue({
   router,
