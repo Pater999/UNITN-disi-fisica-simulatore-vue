@@ -35,7 +35,10 @@ export default new Vuex.Store({
           examState.toString()
         );
       } else {
-        window.localStorage.removeItem(`${APP_NAME}_isExamStarted`);
+        window.localStorage.setItem(
+          `${APP_NAME}_isExamStarted`,
+          examState.toString()
+        );
       }
     },
     [Action.SET_EXAM_QUESTIONS](
@@ -177,7 +180,6 @@ export default new Vuex.Store({
         settings.infiniteTime ? -1 : settings.time * 60000
       );
       commit(Action.SET_EXAM_START_DATE, new Date().getTime());
-      commit(Action.SET_QUESTIONS, questions);
       commit(Action.SET_EXAM_STATE, true);
     },
     [Action.END_EXAM]({ commit }) {
