@@ -41,11 +41,11 @@
         <b-nav-item>
           <router-link
             class="nav-link myNavBar__item mr-2"
-            to="/statistiche"
+            to="/informazioni"
             active-class="active"
             tag="li"
           >
-            Statistiche
+            Informazioni
           </router-link>
         </b-nav-item>
       </b-navbar-nav>

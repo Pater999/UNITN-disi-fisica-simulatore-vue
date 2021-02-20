@@ -16,6 +16,8 @@ const ResultsPage = () =>
   import(
     /* webpackChunkName: "results-page" */ '../views/Test/Results/Results.vue'
   );
+const InfoPage = () =>
+  import(/* webpackChunkName: "info-page" */ '../views/Info/Info.vue');
 const ErrorPage = () =>
   import(/* webpackChunkName: "404-page" */ '../views/404/404.vue');
 
@@ -60,6 +62,15 @@ const routes: Array<RouteConfig> = [
     },
   },
   {
+    path: '/informazioni',
+    name: 'info-page',
+    component: InfoPage,
+    meta: {
+      title: `${appTitle} - Informazioni`,
+      showHeader: true,
+    },
+  },
+  {
     path: '/404',
     name: '404-page',
     component: ErrorPage,
@@ -89,7 +100,9 @@ router.beforeEach(async (to, from, next) => {
   const requiresExam = to.matched.some(record => record.meta.examStarted);
   const { isExamStarted } = store.getters;
 
-  if (requiresExam && !isExamStarted) {
+  if (isExamStarted && !requiresExam) {
+    next('/test');
+  } else if (requiresExam && !isExamStarted) {
     next('/');
   } else {
     next();

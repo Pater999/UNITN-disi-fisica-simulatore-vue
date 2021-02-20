@@ -4,14 +4,36 @@ import { mapGetters } from 'vuex';
 
 @Component({
   computed: {
-    ...mapGetters(['isExamStarted']),
+    ...mapGetters(['isExamStarted', 'userAnswersCount', 'examQuestionsCount']),
   },
 })
 export default class Header extends Vue {
   isExamStarted!: boolean;
+  userAnswersCount!: number;
+  examQuestionsCount!: number;
 
   async endExam() {
-    await this.$store.dispatch(END_EXAM);
-    this.$router.replace('/test-results');
+    try {
+      await this.$confirm(
+        'Hai risposto a ' +
+          this.userAnswersCount +
+          ' domande su ' +
+          this.examQuestionsCount +
+          '. Sei sicuro di voler terminare il tentativo?',
+        'Termina il test',
+        {
+          confirmButtonText: 'Termina test',
+          cancelButtonText: 'Annulla',
+          type: 'warning',
+          confirmButtonClass: 'el-button--warning',
+          closeOnClickModal: false,
+        }
+      );
+
+      await this.$store.dispatch(END_EXAM);
+      this.$router.replace('/test-results');
+    } catch (error) {
+      console.log('ANNULLATO');
+    }
   }
 }

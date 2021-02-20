@@ -12,10 +12,9 @@ const APP_NAME = 'SIMULATORE_FISICA';
 interface State {
   isExamStarted: boolean;
   examQuestions: Question[] | null;
-  userExamSolutions: null;
-  questions: QuestionsDTO | null;
+  userExamSolutions: string[][] | null;
   examTime: number | null;
-  examStartDate: Date | null;
+  examStartDate: number | null;
 }
 
 export default new Vuex.Store({
@@ -25,22 +24,18 @@ export default new Vuex.Store({
     examTime: null,
     examStartDate: null,
     userExamSolutions: null,
-    questions: null,
   },
   mutations: {
     [Action.SET_EXAM_STATE](state: State, examState: boolean) {
       state.isExamStarted = examState;
-    },
-    [Action.SET_QUESTIONS](state: State, questions: QuestionsDTO | null) {
-      state.questions = questions;
 
-      if (questions) {
+      if (examState) {
         window.localStorage.setItem(
-          `${APP_NAME}_questions`,
-          JSON.stringify(questions)
+          `${APP_NAME}_isExamStarted`,
+          examState.toString()
         );
       } else {
-        window.localStorage.removeItem(`${APP_NAME}_questions`);
+        window.localStorage.removeItem(`${APP_NAME}_isExamStarted`);
       }
     },
     [Action.SET_EXAM_QUESTIONS](
@@ -58,6 +53,21 @@ export default new Vuex.Store({
         window.localStorage.removeItem(`${APP_NAME}_examQuestions`);
       }
     },
+    [Action.SET_EXAM_USER_ANSWER](
+      state: State,
+      userAnswers: string[][] | null
+    ) {
+      state.userExamSolutions = userAnswers;
+
+      if (userAnswers) {
+        window.localStorage.setItem(
+          `${APP_NAME}_userAnswers`,
+          JSON.stringify(userAnswers)
+        );
+      } else {
+        window.localStorage.removeItem(`${APP_NAME}_userAnswers`);
+      }
+    },
     [Action.SET_EXAM_TIME](state: State, time: number | null) {
       state.examTime = time;
 
@@ -67,13 +77,13 @@ export default new Vuex.Store({
         window.localStorage.removeItem(`${APP_NAME}_time`);
       }
     },
-    [Action.SET_EXAM_START_DATE](state: State, startDate: Date | null) {
+    [Action.SET_EXAM_START_DATE](state: State, startDate: number | null) {
       state.examStartDate = startDate;
 
       if (startDate) {
         window.localStorage.setItem(
           `${APP_NAME}_startDate`,
-          startDate.toUTCString()
+          startDate.toString()
         );
       } else {
         window.localStorage.removeItem(`${APP_NAME}_startDate`);
@@ -87,14 +97,19 @@ export default new Vuex.Store({
       const examQuestions = window.localStorage.getItem(
         `${APP_NAME}_examQuestions`
       );
-      const questions = window.localStorage.getItem(`${APP_NAME}_questions`);
+      const userAnswers = window.localStorage.getItem(
+        `${APP_NAME}_userAnswers`
+      );
+      const isExamStarted = window.localStorage.getItem(
+        `${APP_NAME}_isExamStarted`
+      );
 
-      if (startDate && time && examQuestions && questions) {
-        commit(Action.SET_EXAM_QUESTIONS, examQuestions);
-        commit(Action.SET_EXAM_TIME, time);
-        commit(Action.SET_EXAM_START_DATE, new Date());
-        commit(Action.SET_QUESTIONS, questions);
-        commit(Action.SET_EXAM_STATE, true);
+      if (startDate && time && examQuestions && userAnswers && isExamStarted) {
+        commit(Action.SET_EXAM_QUESTIONS, JSON.parse(examQuestions));
+        commit(Action.SET_EXAM_TIME, parseInt(time));
+        commit(Action.SET_EXAM_START_DATE, parseInt(startDate));
+        commit(Action.SET_EXAM_USER_ANSWER, JSON.parse(userAnswers));
+        commit(Action.SET_EXAM_STATE, isExamStarted === 'true');
       }
     },
     [Action.START_EXAM](
@@ -154,21 +169,35 @@ export default new Vuex.Store({
 
       commit(Action.SET_EXAM_QUESTIONS, examQuestions);
       commit(
+        Action.SET_EXAM_USER_ANSWER,
+        new Array(examQuestions.length).fill([])
+      );
+      commit(
         Action.SET_EXAM_TIME,
         settings.infiniteTime ? -1 : settings.time * 60000
       );
-      commit(Action.SET_EXAM_START_DATE, new Date());
+      commit(Action.SET_EXAM_START_DATE, new Date().getTime());
       commit(Action.SET_QUESTIONS, questions);
       commit(Action.SET_EXAM_STATE, true);
     },
     [Action.END_EXAM]({ commit }) {
       commit(Action.SET_EXAM_STATE, false);
     },
+    [Action.CHANGE_ANSWER]({ commit }, { answers }: { answers: string[][] }) {
+      commit(Action.SET_EXAM_USER_ANSWER, answers);
+    },
   },
   getters: {
     isExamStarted: state => state.isExamStarted,
     examQuestions: state => state.examQuestions,
-    questions: state => state.questions,
+    examQuestionsCount: state => state.examQuestions?.length || 0,
+    userExamSolutions: state => state.userExamSolutions,
+    examStartDate: state => state.examStartDate,
+    examTime: state => state.examTime,
+    userAnswersCount: state =>
+      state.userExamSolutions?.filter(el => el.length > 0).length ?? 0,
+    userExamSolutionsParsed: state =>
+      state.userExamSolutions?.map(el => el[0] ?? '') ?? [],
   },
   modules: {},
 });

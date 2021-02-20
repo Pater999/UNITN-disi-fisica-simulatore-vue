@@ -1,0 +1,52 @@
+.test {
+  &__question {
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: default;
+  }
+
+  &__answer {
+    font-size: 1.4rem;
+    white-space: normal;
+  }
+
+  .box-card {
+    min-height: 60vh;
+  }
+
+  .el-checkbox__input {
+    vertical-align: top;
+    margin-top: 0.2rem;
+    .el-checkbox__inner {
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 50%;
+    }
+    .el-checkbox__inner::after {
+      content: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .test {
+    &__question {
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+
+    &__answer {
+      font-size: 0.8rem;
+    }
+
+    .el-checkbox {
+      .el-checkbox__input {
+        .el-checkbox__inner {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
