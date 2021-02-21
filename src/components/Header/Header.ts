@@ -30,7 +30,7 @@ export default class Header extends Vue {
         }
       );
 
-      await this.$store.dispatch(END_EXAM);
+      await this.$store.dispatch(END_EXAM, { endDate: new Date() });
       this.$router.replace('/test-results');
     } catch (error) {
       console.log('ANNULLATO');

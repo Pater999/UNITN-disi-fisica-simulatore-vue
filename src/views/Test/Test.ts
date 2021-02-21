@@ -81,7 +81,9 @@ export default class Test extends Vue {
 
   async endExam() {
     clearInterval(this.interval);
-    await this.$store.dispatch(END_EXAM);
+    await this.$store.dispatch(END_EXAM, {
+      endDate: new Date(this.examStartDate + this.examTime),
+    });
     await this.$alert(
       "Hai finito il tempo a disposizione per completare l'esame",
       'Tempo finito',

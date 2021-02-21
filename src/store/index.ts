@@ -15,6 +15,7 @@ interface State {
   userExamSolutions: string[][] | null;
   examTime: number | null;
   examStartDate: number | null;
+  examEndDate: number | null;
 }
 
 export default new Vuex.Store({
@@ -23,6 +24,7 @@ export default new Vuex.Store({
     examQuestions: null,
     examTime: null,
     examStartDate: null,
+    examEndDate: null,
     userExamSolutions: null,
   },
   mutations: {
@@ -92,10 +94,20 @@ export default new Vuex.Store({
         window.localStorage.removeItem(`${APP_NAME}_startDate`);
       }
     },
+    [Action.SET_EXAM_END_DATE](state: State, endDate: number | null) {
+      state.examEndDate = endDate;
+
+      if (endDate) {
+        window.localStorage.setItem(`${APP_NAME}_endDate`, endDate.toString());
+      } else {
+        window.localStorage.removeItem(`${APP_NAME}_endDate`);
+      }
+    },
   },
   actions: {
     [Action.READ_EXAM]({ commit }) {
       const startDate = window.localStorage.getItem(`${APP_NAME}_startDate`);
+      const endDate = window.localStorage.getItem(`${APP_NAME}_endDate`);
       const time = window.localStorage.getItem(`${APP_NAME}_time`);
       const examQuestions = window.localStorage.getItem(
         `${APP_NAME}_examQuestions`
@@ -111,6 +123,7 @@ export default new Vuex.Store({
         commit(Action.SET_EXAM_QUESTIONS, JSON.parse(examQuestions));
         commit(Action.SET_EXAM_TIME, parseInt(time));
         commit(Action.SET_EXAM_START_DATE, parseInt(startDate));
+        commit(Action.SET_EXAM_END_DATE, parseInt(endDate || '0'));
         commit(Action.SET_EXAM_USER_ANSWER, JSON.parse(userAnswers));
         commit(Action.SET_EXAM_STATE, isExamStarted === 'true');
       }
@@ -132,6 +145,7 @@ export default new Vuex.Store({
             D: q.D,
             imageLink: q.imageLink,
             id: q.id,
+            points: 6,
           } as Question)
       );
       let theoretical = questions.theoreticalQuestions.map(
@@ -144,6 +158,7 @@ export default new Vuex.Store({
             D: q.D,
             imageLink: q.imageLink,
             id: q.id,
+            points: 2,
           } as Question)
       );
       let simple = questions.simpleExercises.map(
@@ -156,6 +171,7 @@ export default new Vuex.Store({
             D: q.D,
             imageLink: q.imageLink,
             id: q.id,
+            points: 4,
           } as Question)
       );
 
@@ -182,19 +198,34 @@ export default new Vuex.Store({
       commit(Action.SET_EXAM_START_DATE, new Date().getTime());
       commit(Action.SET_EXAM_STATE, true);
     },
-    [Action.END_EXAM]({ commit }) {
+    [Action.END_EXAM]({ commit }, { endDate }: { endDate: Date }) {
       commit(Action.SET_EXAM_STATE, false);
+      commit(Action.SET_EXAM_END_DATE, endDate.getTime());
+      window.localStorage.removeItem(`${APP_NAME}_currentQuestion`);
     },
     [Action.CHANGE_ANSWER]({ commit }, { answers }: { answers: string[][] }) {
       commit(Action.SET_EXAM_USER_ANSWER, answers);
     },
+    [Action.CLEAR_EXAM]({ commit }) {
+      commit(Action.SET_EXAM_QUESTIONS, null);
+      commit(Action.SET_EXAM_USER_ANSWER, null);
+      commit(Action.SET_EXAM_TIME, null);
+      commit(Action.SET_EXAM_START_DATE, null);
+      commit(Action.SET_EXAM_END_DATE, null);
+    },
   },
   getters: {
     isExamStarted: state => state.isExamStarted,
+    areThereResults: state =>
+      state.examEndDate && state.examStartDate && state.examQuestions
+        ? true
+        : false,
     examQuestions: state => state.examQuestions,
     examQuestionsCount: state => state.examQuestions?.length || 0,
     userExamSolutions: state => state.userExamSolutions,
     examStartDate: state => state.examStartDate,
+    examTimeUsed: state =>
+      (state.examEndDate || 0) - (state.examStartDate || 0),
     examTime: state => state.examTime,
     userAnswersCount: state =>
       state.userExamSolutions?.filter(el => el.length > 0).length ?? 0,

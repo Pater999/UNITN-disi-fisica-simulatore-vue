@@ -16,7 +16,10 @@
     <el-card class="box-card mt-3">
       <div slot="header" class="clearfix">
         <div class="test__question">
-          <span>{{ currentQuestion }}. </span>
+          <span class="test__question-points"
+            >[{{ examQuestions[currentQuestion - 1].points }} punti]</span
+          >
+          <span class="ml-3">{{ currentQuestion }}. </span>
           <span v-html="examQuestions[currentQuestion - 1].question" />
         </div>
       </div>

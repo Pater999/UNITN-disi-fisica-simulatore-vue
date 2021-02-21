@@ -74,7 +74,7 @@
           <div>
             <el-slider
               :disabled="lockValues || form.infiniteTime"
-              :min="30"
+              :min="1"
               :step="30"
               :max="1440"
               v-model="form.time"

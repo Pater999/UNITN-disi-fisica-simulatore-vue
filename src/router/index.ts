@@ -50,6 +50,7 @@ const routes: Array<RouteConfig> = [
     meta: {
       title: `${appTitle} - Test`,
       showHeader: true,
+      needResult: true,
     },
   },
   {
@@ -98,9 +99,12 @@ router.afterEach(async to => {
 
 router.beforeEach(async (to, from, next) => {
   const requiresExam = to.matched.some(record => record.meta.examStarted);
-  const { isExamStarted } = store.getters;
+  const requiresResults = to.matched.some(record => record.meta.needResult);
+  const { isExamStarted, areThereResults } = store.getters;
 
-  if (isExamStarted && !requiresExam) {
+  if (requiresResults && !areThereResults) {
+    next('/');
+  } else if (isExamStarted && !requiresExam) {
     next('/test');
   } else if (requiresExam && !isExamStarted) {
     next('/');
