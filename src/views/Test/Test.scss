@@ -14,8 +14,16 @@
     white-space: normal;
   }
 
+  &__link {
+    font-size: 1.2rem;
+  }
+
   .box-card {
     min-height: 60vh;
+  }
+
+  .my-modal {
+    width: 50vw;
   }
 
   .el-checkbox__input {
@@ -41,6 +49,14 @@
 
     &__answer {
       font-size: 0.8rem;
+    }
+
+    &__link {
+      font-size: 0.8rem;
+    }
+
+    .my-modal {
+      width: 85vw;
     }
 
     .el-checkbox {

@@ -41,8 +41,16 @@
     }
   }
 
+  &__link {
+    font-size: 1.2rem;
+  }
+
   .box-card {
     min-height: 60vh;
+  }
+
+  .my-modal {
+    width: 50vw;
   }
 
   .fake-checkbox {
@@ -82,6 +90,14 @@
   .correct-test {
     .el-button {
       font-size: 0.7rem;
+    }
+
+    &__link {
+      font-size: 0.8rem;
+    }
+
+    .my-modal {
+      width: 85vw;
     }
 
     &__status {

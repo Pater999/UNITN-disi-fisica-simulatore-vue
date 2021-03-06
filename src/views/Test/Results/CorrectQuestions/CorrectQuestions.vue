@@ -2,7 +2,7 @@
   <div class="correct-test">
     <div class="row">
       <div class="mb-3 col-md-6 col-lg-7 col-xl-8">
-        <div :class="['correct-test__status w-100 ', questionStatusClass()]">
+        <div :class="['correct-test__status w-100', questionStatusClass()]">
           {{ questionStatusText() }}
         </div>
       </div>
@@ -29,6 +29,18 @@
           >
           <span class="ml-3">{{ currentQuestion }}. </span>
           <span v-html="examQuestions[currentQuestion - 1].question" />
+        </div>
+        <div
+          class="d-flex justify-content-end"
+          v-if="examQuestions[currentQuestion - 1].imageLink"
+        >
+          <el-link
+            class="correct-test__link mt-2"
+            @click="imageDialogVisible = true"
+            type="primary"
+          >
+            Vedi immagine
+          </el-link>
         </div>
       </div>
       <div class="mt-3">
@@ -79,6 +91,19 @@
       >
       </el-pagination>
     </div>
+    <el-dialog
+      title="Immagine"
+      custom-class="my-modal"
+      :visible.sync="imageDialogVisible"
+    >
+      <div class="text-center">
+        <el-image :src="examQuestions[currentQuestion - 1].imageLink">
+          <div slot="placeholder" class="image-slot">
+            Loading<span class="dot">...</span>
+          </div>
+        </el-image>
+      </div>
+    </el-dialog>
   </div>
 </template>
 

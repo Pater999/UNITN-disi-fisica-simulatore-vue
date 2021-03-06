@@ -22,6 +22,18 @@
           <span class="ml-3">{{ currentQuestion }}. </span>
           <span v-html="examQuestions[currentQuestion - 1].question" />
         </div>
+        <div
+          class="d-flex justify-content-end"
+          v-if="examQuestions[currentQuestion - 1].imageLink"
+        >
+          <el-link
+            class="test__link mt-2"
+            @click="imageDialogVisible = true"
+            type="primary"
+          >
+            Vedi immagine
+          </el-link>
+        </div>
       </div>
       <el-checkbox-group
         @change="solutionChanged"
@@ -74,6 +86,19 @@
       >
       </el-pagination>
     </div>
+    <el-dialog
+      title="Immagine"
+      custom-class="my-modal"
+      :visible.sync="imageDialogVisible"
+    >
+      <div class="text-center">
+        <el-image :src="examQuestions[currentQuestion - 1].imageLink">
+          <div slot="placeholder" class="image-slot">
+            Loading<span class="dot">...</span>
+          </div>
+        </el-image>
+      </div>
+    </el-dialog>
   </div>
 </template>
 

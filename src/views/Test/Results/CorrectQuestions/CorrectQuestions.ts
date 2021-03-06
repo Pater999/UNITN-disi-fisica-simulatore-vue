@@ -14,6 +14,8 @@ export default class CorrectQuestions extends Vue {
   windowWidth = 0;
   pagerCount = 5;
 
+  imageDialogVisible = false;
+
   created() {
     window.addEventListener('resize', this.handleResize);
     this.handleResize();

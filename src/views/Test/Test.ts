@@ -25,6 +25,8 @@ export default class Test extends Vue {
 
   interval: number | undefined;
 
+  imageDialogVisible = false;
+
   currentQuestion = 1;
   timePercentage = 0;
   windowWidth = 0;
