@@ -26,7 +26,7 @@
           <li
             v-for="theoreticalQuestion in filteredQuestions.theoreticalQuestions"
             :key="`theo-${theoreticalQuestion.id}`"
-            :seq="theoreticalQuestion.id"
+            :seq="theoreticalQuestion.id - 1000"
           >
             <div v-html="theoreticalQuestion.question"></div>
             <ol type="A">
@@ -81,7 +81,7 @@
           <li
             v-for="simpleExercise in filteredQuestions.simpleExercises"
             :key="`simpl-${simpleExercise.id}`"
-            :seq="simpleExercise.id"
+            :seq="simpleExercise.id - 2000"
           >
             <div v-html="simpleExercise.question"></div>
             <ol type="A">
@@ -134,7 +134,7 @@
           <li
             v-for="difficultExercise in filteredQuestions.difficultExercises"
             :key="`diffEx-${difficultExercise.id}`"
-            :seq="difficultExercise.id"
+            :seq="difficultExercise.id - 3000"
           >
             <div v-html="difficultExercise.question"></div>
             <ol type="A">

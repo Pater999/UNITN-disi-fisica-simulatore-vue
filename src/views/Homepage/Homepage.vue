@@ -56,7 +56,7 @@
               active-text="Domande in ordine casuale"
             />
           </div>
-          <div>
+          <div v-show="false">
             <el-switch
               v-model="form.shuffle"
               active-text="Risposte in ordine casuale"

@@ -6,7 +6,21 @@ export interface Question {
   id: number;
   imageLink: string;
   question: string;
-  points?: number;
+  points: number;
+}
+
+export interface UserQuestion {
+  A: string;
+  B: string;
+  C: string;
+  D: string;
+  id: number;
+  imageLink: string;
+  question: string;
+  points: number;
+  sol: string;
+  userSol: string;
+  formula: string;
 }
 
 export interface DifficultExercises extends Question {

@@ -1,6 +1,6 @@
 <template>
   <div v-loading.fullscreen.lock="isLoading">
-    <el-card class="box-card result">
+    <el-card class="box-card result" v-if="showStatsTab">
       <h4 slot="header" class="clearfix">Risultati</h4>
       <div v-if="!isLoading">
         <div v-if="promoted" class="text-center bg-success result__status">
@@ -43,8 +43,8 @@
               <strong>{{ penalty }} </strong> * punteggio domanda
             </div>
             <div class="d-flex mt-5 mb-5">
-              <el-button type="primary">
-                Correggi le domande
+              <el-button type="primary" @click="showStatsTab = false">
+                Vedi correzione errori
               </el-button>
               <el-button @click="goToMenu()">
                 Esci
@@ -62,6 +62,14 @@
         </div>
       </div>
     </el-card>
+    <div v-else>
+      <CorrectQuestions
+        v-if="questionsResult.length > 0"
+        :examQuestions="questionsResult"
+        :examQuestionsCount="questionsResult.length"
+        :showStatistics.sync="showStatsTab"
+      />
+    </div>
   </div>
 </template>
 
