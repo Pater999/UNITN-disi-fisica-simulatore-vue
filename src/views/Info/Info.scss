@@ -1,3 +1,10 @@
 .info-card {
-    min-height: 85vh;
+  min-height: 85vh;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .info-card {
+    font-size: 0.8rem;
+  }
 }
