@@ -84,6 +84,18 @@
             :seq="simpleExercise.id - 2000"
           >
             <div v-html="simpleExercise.question"></div>
+            <div
+              class="d-flex justify-content-end"
+              v-if="simpleExercise.imageLink"
+            >
+              <el-link
+                class="correct-test__link mt-2"
+                @click="showImage(simpleExercise.imageLink)"
+                type="primary"
+              >
+                Vedi immagine
+              </el-link>
+            </div>
             <ol type="A">
               <li
                 :class="[
@@ -137,6 +149,18 @@
             :seq="difficultExercise.id - 3000"
           >
             <div v-html="difficultExercise.question"></div>
+            <div
+              class="d-flex justify-content-end"
+              v-if="difficultExercise.imageLink"
+            >
+              <el-link
+                class="correct-test__link mt-2"
+                @click="showImage(difficultExercise.imageLink)"
+                type="primary"
+              >
+                Vedi immagine
+              </el-link>
+            </div>
             <ol type="A">
               <li
                 :class="[
@@ -182,6 +206,19 @@
         </div>
       </el-tab-pane>
     </el-tabs>
+    <el-dialog
+      title="Immagine"
+      custom-class="my-modal"
+      :visible.sync="imageDialogVisible"
+    >
+      <div class="text-center">
+        <el-image :src="selectedImageLink">
+          <div slot="placeholder" class="image-slot">
+            Loading<span class="dot">...</span>
+          </div>
+        </el-image>
+      </div>
+    </el-dialog>
   </div>
 </template>
 

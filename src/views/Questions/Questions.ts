@@ -12,6 +12,9 @@ export default class Questions extends Vue {
   questionSearch = '';
   selectedTab = 'theoreticalQuestions';
 
+  imageDialogVisible = false;
+  selectedImageLink = '';
+
   created() {
     this.fetchQuestions();
   }
@@ -43,5 +46,10 @@ export default class Questions extends Vue {
     } finally {
       this.isLoading = false;
     }
+  }
+
+  showImage(imageLink: string) {
+    this.selectedImageLink = imageLink;
+    this.imageDialogVisible = true;
   }
 }
