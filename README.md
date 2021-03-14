@@ -3,7 +3,7 @@
 
 Simulatore web, sviluppato in [Vue.JS](https://vuejs.org/), per l'esame di fisica tenuto nel corso di Informatica dell'Università di Trento. Il simulatore è basato sulle domande degli esami degli anni precedenti.
 
-**Link al simulatore**: <a href="https://simulatore-fisica.pater999.tech" target="_blank">simulatore-fisica.pater999.tech</a>
+**Link al simulatore**: <a href="https://simulatore-fisica.pater999.it" target="_blank">simulatore-fisica.pater999.it</a>
 
 **PDF con domande e risposte esami precedenti**: <a href="https://github.com/Pater999/UNITN-disi-fisica-simulatore-vue/releases" target="_blank">domande_esami_fisica_disi_unitn.pdf</a>
 
