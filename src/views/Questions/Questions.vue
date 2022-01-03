@@ -1,16 +1,16 @@
 <template>
   <div class="mx-1" v-loading="isLoading">
-    <div class="d-flex">
+    <div class="d-flex sticky-top">
       <el-input placeholder="Cerca una domanda" v-model="questionSearch">
         <el-button slot="append" icon="el-icon-search"></el-button>
       </el-input>
       <el-checkbox
-        class="ml-3"
+        class="ml-3 bg-white"
         v-model="showSolutions"
         label="Mostra soluzioni"
         border
       ></el-checkbox>
-    </div>
+    </div>  
 
     <el-tabs
       type="border-card"
