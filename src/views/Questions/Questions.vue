@@ -10,7 +10,7 @@
         label="Mostra soluzioni"
         border
       ></el-checkbox>
-    </div>  
+    </div>
 
     <el-tabs
       type="border-card"
