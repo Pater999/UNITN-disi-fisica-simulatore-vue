@@ -1596,7 +1596,7 @@
     },
     {
       "id": 3045,
-      "question": "Un frigorifero ha una porta di superficie S (m<sup>2</sup>). Inizialmente spento e aperto, l'aria al suo interno ha una temperatura T<sub>i</sub> (K). Una volta in funzione l'aria al suo interno raggiunge la temperatura T<sub>f</sub> (K). La forza con cui la porta viene schiacciata contro il frigorifero e tenuta chiusa è F (N). Si consideri la pressione dell'ambiente P<sub>atm</sub> = 1 atm = 0.101325 • 106 N/m<sup>2</sup>. Dati: S = 1.5, T<sub>i</sub> = 300.0, T<sub>f</sub> = 280.0, trovare F",
+      "question": "Un frigorifero ha una porta di superficie S (m<sup>2</sup>). Inizialmente spento e aperto, l'aria al suo interno ha una temperatura T<sub>i</sub> (K). Una volta in funzione l'aria al suo interno raggiunge la temperatura T<sub>f</sub> (K). La forza con cui la porta viene schiacciata contro il frigorifero e tenuta chiusa è F (N). Si consideri la pressione dell'ambiente P<sub>atm</sub> = 1 atm = 0.101325 • 10<sup>6</sup> N/m<sup>2</sup>. Dati: S = 1.5, T<sub>i</sub> = 300.0, T<sub>f</sub> = 280.0, trovare F",
       "A": "8.38 * 10<sup>3</sup>",
       "B": "2.07 * 10<sup>4</sup>",
       "C": "6.48 * 10<sup>3</sup>",
@@ -1668,7 +1668,7 @@
     },
     {
       "id": 3051,
-      "question": "Una persona mangia a cena una quantità di cibo pari a ncal (kcal) di energia. Vuole fare un lavoro equivalente in palestra sollevando un oggetto di massa m (kg) da terra fino ad un'altezza h (m) e poi lo lascia cadere a terra. Si ricordi che 1 kcal=103 cal=4.184*103 J. Dati: ncal = 1900.0, h = 1.4, N = 7200.0, trovare m.",
+      "question": "Una persona mangia a cena una quantità di cibo pari a ncal (kcal) di energia. Vuole fare un lavoro equivalente in palestra sollevando un oggetto di massa m (kg) da terra fino ad un'altezza h (m) e poi lo lascia cadere a terra. Si ricordi che 1 kcal=10<sup>3</sup> cal=4.184*10<sup>3</sup> J. Dati: ncal = 1900.0, h = 1.4, N = 7200.0, trovare m.",
       "A": "80.4",
       "B": "98.9",
       "C": "61.3",
@@ -1932,7 +1932,7 @@
     },
     {
       "id": 3073,
-      "question": "A una certa massa d'acqua m (kg) a temperatura T (C) viene data calore Q (kJ) ed evapora tutta. Si considerino cV = 2.25*10<sup>6</sup> J/kg e c(latente) = 4186*10<sup>6</sup> J/(kg *C) Dati: T = 27.48, Q = 693.32, trovare m.",
+      "question": "A una certa massa d'acqua m (kg) a temperatura T (C) viene data calore Q (kJ) ed evapora tutta. Si considerino c(latente) = 2.25*10<sup>6</sup> J/kg e cV = 4186 J/(kg *C) Dati: T = 27.48, Q = 693.32, trovare m.",
       "A": "0.47",
       "B": "0.58",
       "C": "0.27",
